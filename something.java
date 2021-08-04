@@ -32,8 +32,6 @@ public class something {
         boolean flag = true;
         System.out.println(flag);
         System.out.println("float value is:" + d1);
-        // System.out.println((float)a);
-        // java operator
         System.out.println("1)Aritmatic\n2)logical\n3)comparison\n4)assignment\n5)logical");
         System.out.println("post inc value of a is: " + a++);
         // System.out.println(a++);
@@ -49,14 +47,8 @@ public class something {
         System.out.println("sqrt " + Math.abs(-89.32f));
         for (int i = 1; i <= 5; i++) {
             System.err.println(Math.random());
-
-            // conditional formating check
-
         }
-
-        // System.out.print("eneter your name: ");
-        String olhak = sc.next();
-        // olhak="vivek";
+     String olhak = sc.next();
         if (10 > 8) {
             System.err.println(olhak + "welcome");
         } else {
@@ -115,7 +107,7 @@ public class something {
             // TODO: handle exception
 
         }
-
+        
         // strat from above only
     }
 
