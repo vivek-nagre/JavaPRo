@@ -7,6 +7,11 @@ public class swapping {
         System.out.println("normal factorial:\n");
         factorial nf = new factorial();
         nf.normal_fact();
+        // fiboncii series object
+        fiboncii fb=new fiboncii();
+        fb.fib();
+        
+
     }
 
 }
@@ -44,5 +49,24 @@ class factorial {
             factooo=factooo*i;
         }
         System.out.println("factorial by nomral method:"+factooo);
+    }
+
+}
+
+class fiboncii{
+    static void fib(){
+        int a=0;
+        int b=1;
+        int c;
+        for (int i=1;i<=10;i++){
+            c=a+b;
+            a=b;
+            b=c;
+            System.err.println(c);
+            
+
+            
+        }
+        System.out.println("done");
     }
 }

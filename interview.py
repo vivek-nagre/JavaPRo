@@ -23,7 +23,7 @@ print(factorial)
 
 
 print("prime number program")
-assume_num=26
+assume_num=5
 if assume_num>1:
     for x in range(2,assume_num):
         if assume_num%2==0:
@@ -39,3 +39,27 @@ if pal == pal_check:
     print("palindrome")
 else:
     print("non pallindrome")
+
+print("odd or even")
+data=list(range(10))
+print(data)
+def odd_even(x):
+    if x%2==0:
+        return "even"
+    else:
+        return "odd"
+lm=list(map(lambda x:x%2==0, data))
+l1=list(filter(lambda x:x%2==0, data))
+print("filter",l1)
+print("map:",lm)
+
+
+print("fibonacci series")
+
+a,b=0,1
+c=0
+for i in range(0,10):
+   c=a+b
+   a,b=b,c 
+   print(c)
+
