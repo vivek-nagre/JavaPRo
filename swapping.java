@@ -8,9 +8,12 @@ public class swapping {
         factorial nf = new factorial();
         nf.normal_fact();
         // fiboncii series object
-        fiboncii fb=new fiboncii();
+        fiboncii fb = new fiboncii();
         fb.fib();
-        
+
+        // prime number checking
+        isprime p = new isprime();
+        p.check_Prime();
 
     }
 
@@ -45,28 +48,45 @@ class factorial {
         int i = 1;
         int number = 7;
         int factooo = 1;
-        for(i=1;i<=number;i++){
-            factooo=factooo*i;
+        for (i = 1; i <= number; i++) {
+            factooo = factooo * i;
         }
-        System.out.println("factorial by nomral method:"+factooo);
+        System.out.println("factorial by nomral method:" + factooo);
     }
 
 }
 
-class fiboncii{
-    static void fib(){
-        int a=0;
-        int b=1;
+class fiboncii {
+    static void fib() {
+        int a = 0;
+        int b = 1;
         int c;
-        for (int i=1;i<=10;i++){
-            c=a+b;
-            a=b;
-            b=c;
+        for (int i = 1; i <= 10; i++) {
+            c = a + b;
+            a = b;
+            b = c;
             System.err.println(c);
-            
 
-            
         }
-        System.out.println("done");
+
+    }
+}
+
+class isprime {
+    static void check_Prime() {
+        int n = 20;
+        int tempo = 0;
+        for (int i = 2; i <= n - 1; i++) {
+            if (n % i == 0) {
+                tempo = tempo + 1;
+            }
+
+        }
+        if (tempo > 1) {
+            System.out.println("number " + n + " is not prime");
+
+        } else {
+            System.out.println("number is prime : "+n);
+        }
     }
 }
