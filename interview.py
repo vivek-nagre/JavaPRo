@@ -33,8 +33,9 @@ if assume_num>1:
         print("prime:",assume_num)
 
 
-pal="nayan"
+pal="radar"
 pal_check=pal[::-1]
 if pal == pal_check:
     print("palindrome")
-        
+else:
+    print("non pallindrome")
